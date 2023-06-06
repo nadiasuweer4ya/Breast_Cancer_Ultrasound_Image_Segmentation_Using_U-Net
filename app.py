@@ -72,6 +72,8 @@ if __name__ == "__main__":
         fn=segment,
         inputs="image",
         outputs=gr.Image(type="pil", label="Breast Cancer Mask"),
+        examples = [["benign(10).png"], ["benign(109).png"]],
+        theme = "huggingface",
         title="Breast Cancer Ultrasound Image Segmentation",
         description="Check out this exciting development in the field of breast cancer diagnosis and treatment! A demo of Breast Cancer Ultrasound Image Segmentation has been developed. Upload an image file, or try out one of the examples below!"
     ).launch(debug=True)
