@@ -1,7 +1,7 @@
 # Breast Cancer Ultrasound Image Segmentation Using U-Net 💐
 Are you curious about breast cancer or how U-Net can be used for ultrasound image segmentation? Let's explore together! Join me in discovering the potential and starting this exciting journey!
 
-# Meduim Blog
+# Medium Blog
 Nadia's Blog: ...
 
 # Website
