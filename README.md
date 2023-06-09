@@ -7,7 +7,7 @@ Nadia's Blog: ...
 # Website
 ()
 
-# Slide For Presentation
+# Presentation Slides
 ()
 
 # Deplyment
