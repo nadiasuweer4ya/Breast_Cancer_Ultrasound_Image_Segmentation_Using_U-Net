@@ -11,8 +11,7 @@ Nadia's Blog: ...
 ()
 
 # Deployment
-In the deployment part, I have created a Hugging Face Spaces to host the model and make it readily accessible. 💐 
-(https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation)
+ I have created a Hugging Face Spaces to host the model and make it readily accessible on [Huggingface's space](https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation). 💐 
 
 # Youtube Video
 Check out my YouTube video where I recommend my Breast Cancer Ultrasound Image Segmentation project! 
