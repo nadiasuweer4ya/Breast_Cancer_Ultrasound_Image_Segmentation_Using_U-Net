@@ -10,7 +10,7 @@ Nadia's Blog: ...
 # Presentation Slides
 ()
 
-# Deplyment
+# Deployment
 In the deployment part, I have created a Hugging Face Spaces to host the model and make it readily accessible. 💐 
 (https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation)
 
