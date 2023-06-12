@@ -4,6 +4,8 @@ Are you curious about breast cancer or how U-Net can be used for ultrasound imag
 # Medium Blog 🥗
 Nadia's Blog: [Medium Blog](https://medium.com/@24098_79544/breast-cancer-ultrasound-segmentation-using-u-net-9b3435be019c)
 
+![Screenshot (354)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/47a8699f-7e35-4b44-9e4f-c0ed6809f614)
+
 # Website
 I'm excited to share with you the website I've created to showcase and describe my latest project on breast cancer ultrasound image segmentation using U-Net. Where you can find the code on my GitHub repository!
 
@@ -28,7 +30,8 @@ Check out my YouTube video where I recommend my Breast Cancer Ultrasound Image S
 # Inspiration
 One individual who greatly inspires me in my pursuit of becoming a software engineer is Craig Federighi from Apple. His exceptional skills and contributions to the field of software engineering have left a lasting impression on me. I aspire to follow in his footsteps and make a positive impact on the world through my work as a software engineer. 
 
-....
+
+![39385-75374-000-lead-Federighi-xl](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/53399df3-91a7-4dc9-b527-904f67ad0509)
 
 
 Author: Suweeraya Noensai, Nadia.
