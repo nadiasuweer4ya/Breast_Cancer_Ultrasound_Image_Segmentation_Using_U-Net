@@ -6,13 +6,13 @@ Nadia's Blog: [Medium Blog](https://medium.com/@24098_79544/breast-cancer-ultras
 
 ![Screenshot (354)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/47a8699f-7e35-4b44-9e4f-c0ed6809f614)
 
-# Website
-I'm excited to share with you the website I've created to showcase and describe my latest project on breast cancer ultrasound image segmentation using U-Net. Where you can find the code on my GitHub repository!
+# Website ✨
+I'm excited to share with you the website I've created to showcase and describe my latest project on breast cancer ultrasound image segmentation using U-Net. Where you can find the code on my GitHub repository! (Dark&Lighr Theme)
 
-Dark Theme
+
 ![Screenshot (353)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/dde7b60a-043d-420e-87af-9b17b4c4e0cf)
 
-Light Theme
+
 
 ![Screenshot (352)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/2fd91952-6d64-4a33-a5f2-0037b5b70192)
 
@@ -20,14 +20,11 @@ Light Theme
 # Presentation Slides
 ()
 
-# Deployment
+# Deployment 🌺
  I have created a Hugging Face Spaces to host the model and make it readily accessible on [Huggingface's space](https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation). 💐 
 
-# Youtube Video
-Check out my YouTube video where I recommend my Breast Cancer Ultrasound Image Segmentation project! 
-()
 
-# Inspiration
+# Inspiration 🌟
 One individual who greatly inspires me in my pursuit of becoming a software engineer is Craig Federighi from Apple. His exceptional skills and contributions to the field of software engineering have left a lasting impression on me. I aspire to follow in his footsteps and make a positive impact on the world through my work as a software engineer. 
 
 
