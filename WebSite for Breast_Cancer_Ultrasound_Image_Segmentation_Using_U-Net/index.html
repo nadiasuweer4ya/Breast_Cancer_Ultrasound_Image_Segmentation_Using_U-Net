@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+
+        <title> Breast Cancer Ultrasound Image Segmentation Using U-Net </title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Nadia</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-shield-plus'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bxs-data' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class='bx bx-moon change-theme' id="theme-button" ></i>
+            </nav>
+        </header>
+
+        <!--=============== Main ===============-->
+        <main class="main">
+            <!--=============== Home ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Suweeraya Noensai</span>
+                        <h1 class="home__name">Breast Cancer Ultrasound</h1>
+                        <h3 class="home__education">Image Segmentation Using U-Net</h3>
+
+                        <div class="home__buttons">
+                            <a download="https://colab.research.google.com/drive/1yZWHHRBqGFWBiAZRygieeP6_lhKahPt7?usp=sharing" href="https://colab.research.google.com/drive/1yZWHHRBqGFWBiAZRygieeP6_lhKahPt7?usp=sharing" class="button button--ghost">
+                                Notebook
+                            </a>
+                            <a href="https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation" class="button">HuggingFace</a>
+                        </div>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="malignant.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net" target="_blank"  class="home__social-link">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                           
+                        <a href="https://medium.com/@24098_79544" target="_blank" class="home__social-link">
+                            <i class='bx bxl-medium' ></i>  
+                        </a>
+
+                        <a href="https://www.instagram.com/nadi4nadia/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon' ></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== Problem ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">What is Breast Cancer?</span>
+                <h2 class="section__title">Problem Statement</h2>
+
+                <div class="about__container container grid">
+                    <img src="breastcancer.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class='bx bx-capsule about__icon'></i>
+                                <h3 class="about__title">Normal</h3>
+                                <span class="about__subtitle">Normal</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class='bx bx-plus-medical about__icon'></i>
+                                <h3 class="about__title">Benign</h3>
+                                <span class="about__subtitle">Benign</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class='bx bxs-package about__icon' ></i>
+                                <h3 class="about__title">Malignant</h3>
+                                <span class="about__subtitle">Malignant</span>
+                            </div>
+                        </div>
+
+                        <p class="about__description">
+                            Breast cancer is a type of cancer that originates in the breast tissue. 
+                            It happens when the cells in the breast start growing abnormally, forming a tumor that can be malignant. 
+                            Although breast cancer can affect both women and men, it is more commonly found in women.<br>
+The breasts consist of glands called lobules, which produce milk, and ducts, which carry the milk to the nipple. Around these glandular tissues, there is fatty and connective tissue. Breast cancer can develop in any of these areas.
+                            Breast cancer is a major global health issue, impacting millions of 
+                            women and resulting in numerous deaths annually. Despite medical advancements 
+                            and increased awareness, breast cancer continues to be a significant challenge. 
+                            Late-stage diagnosis and limited healthcare access in certain areas contribute 
+                            to the ongoing difficulty.
+                        </p>
+
+                        <a href="#contact" class="button">Medium Blog</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== Dataset ===============-->
+            <section class="services__section">
+                <span class="section__subtitle">Let's take a look</span>
+                <h2 class="section__title">More Over...</h2>
+
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Data <br> Set</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                    <h3 class="services__modal-title">Dataset</h3>
+                                    <p class="services__modal-description">
+                                        The dataset consists of 780 images with an 
+                                        average image size of 500*500 pixels. The images 
+                                        are in PNG format. <br> The ground truth images are presented
+                                         with original images. The images are categorized into three cl
+                                         asses, which are normal, benign, and malignant.
+                                    </p>
+                                
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-info-circle services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            NORMAL class has 133 images and 133 masks. 
+                                        </p>
+                                    </li>
+
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-info-circle services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            BENIGN class has 437 images and 454 masks.
+                                        </p>
+                                    </li>
+
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-info-circle services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            MALIGNANT class has 210 images and 211 masks.
+                                        </p>
+                                    </li>
+
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-info-circle services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            There are total of 780 images and 798 masks.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__title">Classification <br>Report</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                    <h3 class="services__modal-title">Classification Report</h3>
+                                    <p class="services__modal-description">
+                                        Overall, the classification report indicates that the model performs well
+                                         in classifying both the "benign" and "malignant" classes. It demonstrates 
+                                         high precision, recall, and F1-scores, suggesting that the model is effective in
+                                          identifying instances of both classes. <br>
+                                        The accuracy of 92% further supports the model's overall performance. 
+                                        This is generally considered a good 
+                                        accuracy, suggesting that the model is performing well on the given task.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__title">The <br> Accuracy</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+
+                                    <h3 class="services__modal-title">Accuracy</h3>
+                                    <p class="services__modal-description">
+                                        An accuracy of 1.0 indicates that the model has achieved perfect accuracy on the evaluation data. 
+                                        It means that the model's predictions align completely with the ground truth labels. <br>
+                                        A perfect accuracy score suggests that the model has learned the patterns and features 
+                                        in the data extremely well and is capable of accurately classifying every sample.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== Classes ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">Dataset</span>
+                <h2 class="section__title">Data Of Each Class</h2>
+
+                <div class="work__filters active-wrok">
+                    <span class="work__item" data-filter="all">All</span>
+                    <span class="work__item" data-filter=".benign">Benign</span>
+                    <span class="work__item" data-filter=".normal">Normal</span>
+                    <span class="work__item" data-filter=".malignant">Malignant</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix benign">
+                        <img src="benign(10).png" alt="" class="work__img">
+
+                        <h3 class="work__title">Benign Class</h3>
+
+                    </div>
+
+                    <div class="work__card mix malignant">
+                        <img src="malignant.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Malignant Class</h3>
+
+                    </div>
+
+                    <div class="work__card mix normal">
+                        <img src="normal.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Normal Class</h3>
+
+                    </div>
+
+                    <div class="work__card mix malignant">
+                        <img src="malignant2.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Malignant Class</h3>
+
+                    </div>
+                </div>
+            </section>
+
+             <!--=============== Contact ===============-->
+             <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in Touch</span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class='bx bx-envelope contact__card-icon' ></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">24098@bodin2.ac.th</span>
+
+                                <a href="https://mail.google.com/?" target="_blank" class="contact__button">
+                                    Write me... <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-instagram contact__card-icon' ></i>
+                                <h3 class="contact__card-title">Instagram</h3>
+                                <span class="contact__card-data">nadi4nadia</span>
+
+                                <a href="https://www.instagram.com/nadi4nadia/" target="_blank" class="contact__button">
+                                    Make Friends with me!<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-github contact__card-icon'></i>
+                                <h3 class="contact__card-title">GitHub</h3>
+                                <span class="contact__card-data">suweeraya</span>
+
+                                <a href="https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net" target="_blank" class="contact__button">
+                                    Make Friends with me! <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Ass hole</h3>
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Names</label>
+                                <input type="text" placeholder="Insert your nane" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="email" placeholder="Enter your email address" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Comment</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your comment" class="contact__form-input"></textarea>
+                            </div>
+
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main> 
+
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Nadia</h1>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#work" class="footer__link">Detail</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-medium' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/nadi4nadia/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Suweeraya Noensai. All right reserved
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== scrollreveal ===============-->
+        <script src="scrollreveal.min.js"></script>
+
+        <!--=============== mixup ===============-->
+        <script src="mixitup.min.js"></script>
+
+        <!--=============== main.js  ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
