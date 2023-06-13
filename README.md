@@ -9,6 +9,8 @@ Nadia's Blog: [Medium Blog](https://medium.com/@24098_79544/breast-cancer-ultras
 # Website ✨
 I'm excited to share with you the website I've created to showcase and describe my latest project on breast cancer ultrasound image segmentation using U-Net. Where you can find the code on my GitHub repository! (Dark&Light Theme)
 
+https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/b4adeb88-8df2-43e6-a621-f90a1c47765f
+
 
 ![Screenshot (353)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/dde7b60a-043d-420e-87af-9b17b4c4e0cf)
 
