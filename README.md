@@ -19,9 +19,6 @@ https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Us
 ![Screenshot (352)](https://github.com/nadiasuweer4ya/Breast_Cancer_Ultrasound_Image_Segmentation_Using_U-Net/assets/135404371/2fd91952-6d64-4a33-a5f2-0037b5b70192)
 
 
-# Presentation Slides
-()
-
 # Deployment 🌺
  I have created a Hugging Face Spaces to host the model and make it readily accessible on [Huggingface's space](https://huggingface.co/spaces/Suweeraya/Breast_Cancer_Ultrasound_Image_Segmentation). 💐 
 
