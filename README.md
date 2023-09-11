@@ -34,4 +34,4 @@ Author: Suweeraya Noensai, Nadia.
 
 Team: Jolly Fish. 
 
-Mentors, TA: Titipat Achakulwisut, Atirut Boribalburephan
+Mentors, TA: Titipat Achakulvisut, Atirut Boribalburephan
